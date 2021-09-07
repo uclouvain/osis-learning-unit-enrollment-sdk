@@ -79,6 +79,8 @@ class EnrollmentList(ModelNormal):
         return {
             'results': ([Enrollment],),  # noqa: E501
             'count': (int,),  # noqa: E501
+            'previous': (str, none_type,),  # noqa: E501
+            'next': (str, none_type,),  # noqa: E501
         }
 
     @cached_property
@@ -89,6 +91,8 @@ class EnrollmentList(ModelNormal):
     attribute_map = {
         'results': 'results',  # noqa: E501
         'count': 'count',  # noqa: E501
+        'previous': 'previous',  # noqa: E501
+        'next': 'next',  # noqa: E501
     }
 
     _composed_schemas = {}
@@ -139,6 +143,8 @@ class EnrollmentList(ModelNormal):
                                 _visited_composed_classes = (Animal,)
             results ([Enrollment]): [optional]  # noqa: E501
             count (int): [optional]  # noqa: E501
+            previous (str, none_type): [optional]  # noqa: E501
+            next (str, none_type): [optional]  # noqa: E501
         """
 
         _check_type = kwargs.pop('_check_type', True)
