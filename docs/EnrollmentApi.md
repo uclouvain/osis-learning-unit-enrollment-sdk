@@ -4,7 +4,7 @@ All URIs are relative to *https://dev.osis.uclouvain.be/api/v1/learning_unit_enr
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**enrollments_list**](EnrollmentApi.md#enrollments_list) | **GET** /enrollments/ | 
+[**enrollments_list**](EnrollmentApi.md#enrollments_list) | **GET** /enrollments/{acronym}/{year}/ | 
 
 
 # **enrollments_list**

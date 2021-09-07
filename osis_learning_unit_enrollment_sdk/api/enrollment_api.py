@@ -119,7 +119,7 @@ class EnrollmentApi(object):
                 'auth': [
                     'Token'
                 ],
-                'endpoint_path': '/enrollments/',
+                'endpoint_path': '/enrollments/{acronym}/{year}/',
                 'operation_id': 'enrollments_list',
                 'http_method': 'GET',
                 'servers': None,
