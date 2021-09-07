@@ -103,6 +103,7 @@ Class | Method | HTTP request | Description
 
  - [AcceptedLanguageEnum](docs/AcceptedLanguageEnum.md)
  - [DisabilitySubtypePepsEnum](docs/DisabilitySubtypePepsEnum.md)
+ - [Enrollment](docs/Enrollment.md)
  - [EnrollmentList](docs/EnrollmentList.md)
  - [Error](docs/Error.md)
  - [SportSubtypePepsEnum](docs/SportSubtypePepsEnum.md)

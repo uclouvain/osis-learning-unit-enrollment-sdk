@@ -11,6 +11,7 @@
 
 from osis_learning_unit_enrollment_sdk.model.accepted_language_enum import AcceptedLanguageEnum
 from osis_learning_unit_enrollment_sdk.model.disability_subtype_peps_enum import DisabilitySubtypePepsEnum
+from osis_learning_unit_enrollment_sdk.model.enrollment import Enrollment
 from osis_learning_unit_enrollment_sdk.model.enrollment_list import EnrollmentList
 from osis_learning_unit_enrollment_sdk.model.error import Error
 from osis_learning_unit_enrollment_sdk.model.sport_subtype_peps_enum import SportSubtypePepsEnum
