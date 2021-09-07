@@ -49,8 +49,10 @@ class SportSubtypePepsEnum(ModelSimple):
 
     allowed_values = {
         ('value',): {
-            'ATHLETE_HL': "PROMISING_ATHLETE_HL",
-            'ATHLETE': "PROMISING_ATHLETE",
+            'None': None,
+            'PROMISING_ATHLETE_HL': "PROMISING_ATHLETE_HL",
+            'PROMISING_ATHLETE': "PROMISING_ATHLETE",
+            'NULL': "null",
         },
     }
 
@@ -59,7 +61,7 @@ class SportSubtypePepsEnum(ModelSimple):
 
     additional_properties_type = None
 
-    _nullable = False
+    _nullable = True
 
     @cached_property
     def openapi_types():
@@ -100,10 +102,10 @@ class SportSubtypePepsEnum(ModelSimple):
         Note that value can be passed either in args or in kwargs, but not in both.
 
         Args:
-            args[0] (str):, must be one of ["PROMISING_ATHLETE_HL", "PROMISING_ATHLETE", ]  # noqa: E501
+            args[0] (str):, must be one of ["PROMISING_ATHLETE_HL", "PROMISING_ATHLETE", "null", ]  # noqa: E501
 
         Keyword Args:
-            value (str):, must be one of ["PROMISING_ATHLETE_HL", "PROMISING_ATHLETE", ]  # noqa: E501
+            value (str):, must be one of ["PROMISING_ATHLETE_HL", "PROMISING_ATHLETE", "null", ]  # noqa: E501
             _check_type (bool): if True, values for parameters in openapi_types
                                 will be type checked and a TypeError will be
                                 raised if the wrong type is input.
