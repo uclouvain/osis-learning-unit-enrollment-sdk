@@ -40,6 +40,8 @@ class EnrollmentApi(object):
 
         def __enrollments_list(
             self,
+            acronym,
+            year,
             **kwargs
         ):
             """enrollments_list  # noqa: E501
@@ -48,9 +50,12 @@ class EnrollmentApi(object):
             This method makes a synchronous HTTP request by default. To make an
             asynchronous HTTP request, please pass async_req=True
 
-            >>> thread = api.enrollments_list(async_req=True)
+            >>> thread = api.enrollments_list(acronym, year, async_req=True)
             >>> result = thread.get()
 
+            Args:
+                acronym (str): The learning unit acronym
+                year (int): The learning unit academic year
 
             Keyword Args:
                 accept_language (AcceptedLanguageEnum): The header advertises which languages the client is able to understand, and which locale variant is preferred. (By languages, we mean natural languages, such as English, and not programming languages.) . [optional]
@@ -102,6 +107,10 @@ class EnrollmentApi(object):
                 '_check_return_type', True
             )
             kwargs['_host_index'] = kwargs.get('_host_index')
+            kwargs['acronym'] = \
+                acronym
+            kwargs['year'] = \
+                year
             return self.call_with_http_info(**kwargs)
 
         self.enrollments_list = _Endpoint(
@@ -117,13 +126,18 @@ class EnrollmentApi(object):
             },
             params_map={
                 'all': [
+                    'acronym',
+                    'year',
                     'accept_language',
                     'x_user_first_name',
                     'x_user_last_name',
                     'x_user_email',
                     'x_user_global_id',
                 ],
-                'required': [],
+                'required': [
+                    'acronym',
+                    'year',
+                ],
                 'nullable': [
                 ],
                 'enum': [
@@ -137,6 +151,10 @@ class EnrollmentApi(object):
                 'allowed_values': {
                 },
                 'openapi_types': {
+                    'acronym':
+                        (str,),
+                    'year':
+                        (int,),
                     'accept_language':
                         (AcceptedLanguageEnum,),
                     'x_user_first_name':
@@ -149,6 +167,8 @@ class EnrollmentApi(object):
                         (str,),
                 },
                 'attribute_map': {
+                    'acronym': 'acronym',
+                    'year': 'year',
                     'accept_language': 'Accept-Language',
                     'x_user_first_name': 'X-User-FirstName',
                     'x_user_last_name': 'X-User-LastName',
@@ -156,6 +176,8 @@ class EnrollmentApi(object):
                     'x_user_global_id': 'X-User-GlobalID',
                 },
                 'location_map': {
+                    'acronym': 'path',
+                    'year': 'path',
                     'accept_language': 'header',
                     'x_user_first_name': 'header',
                     'x_user_last_name': 'header',

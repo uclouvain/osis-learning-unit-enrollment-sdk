@@ -75,14 +75,16 @@ configuration.api_key['Token'] = 'YOUR_API_KEY'
 with osis_learning_unit_enrollment_sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = enrollment_api.EnrollmentApi(api_client)
-    accept_language = AcceptedLanguageEnum("en") # AcceptedLanguageEnum | The header advertises which languages the client is able to understand, and which locale variant is preferred. (By languages, we mean natural languages, such as English, and not programming languages.)  (optional)
+    acronym = "LABCD1234" # str | The learning unit acronym
+year = 2021 # int | The learning unit academic year
+accept_language = AcceptedLanguageEnum("en") # AcceptedLanguageEnum | The header advertises which languages the client is able to understand, and which locale variant is preferred. (By languages, we mean natural languages, such as English, and not programming languages.)  (optional)
 x_user_first_name = "X-User-FirstName_example" # str |  (optional)
 x_user_last_name = "X-User-LastName_example" # str |  (optional)
 x_user_email = "X-User-Email_example" # str |  (optional)
 x_user_global_id = "X-User-GlobalID_example" # str |  (optional)
 
     try:
-        api_response = api_instance.enrollments_list(accept_language=accept_language, x_user_first_name=x_user_first_name, x_user_last_name=x_user_last_name, x_user_email=x_user_email, x_user_global_id=x_user_global_id)
+        api_response = api_instance.enrollments_list(acronym, year, accept_language=accept_language, x_user_first_name=x_user_first_name, x_user_last_name=x_user_last_name, x_user_email=x_user_email, x_user_global_id=x_user_global_id)
         pprint(api_response)
     except osis_learning_unit_enrollment_sdk.ApiException as e:
         print("Exception when calling EnrollmentApi->enrollments_list: %s\n" % e)
