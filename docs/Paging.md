@@ -1,9 +1,11 @@
-# DisabilitySubtypePepsEnum
+# Paging
 
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**value** | **str** |  |  must be one of ["REDUCED_MOBILITY", "OTHER_DISABILITY", "", ]
+**count** | **int** |  | [optional] 
+**next** | **str, none_type** |  | [optional] 
+**previous** | **str, none_type** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
