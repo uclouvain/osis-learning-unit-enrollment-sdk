@@ -109,6 +109,7 @@ Class | Method | HTTP request | Description
  - [Error](docs/Error.md)
  - [Paging](docs/Paging.md)
  - [SportSubtypePepsEnum](docs/SportSubtypePepsEnum.md)
+ - [StudentSpecificProfile](docs/StudentSpecificProfile.md)
  - [TypePepsEnum](docs/TypePepsEnum.md)
 
 

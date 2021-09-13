@@ -17,4 +17,5 @@ from osis_learning_unit_enrollment_sdk.model.enrollment_list_all_of import Enrol
 from osis_learning_unit_enrollment_sdk.model.error import Error
 from osis_learning_unit_enrollment_sdk.model.paging import Paging
 from osis_learning_unit_enrollment_sdk.model.sport_subtype_peps_enum import SportSubtypePepsEnum
+from osis_learning_unit_enrollment_sdk.model.student_specific_profile import StudentSpecificProfile
 from osis_learning_unit_enrollment_sdk.model.type_peps_enum import TypePepsEnum

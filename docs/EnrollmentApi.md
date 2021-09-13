@@ -70,6 +70,7 @@ with osis_learning_unit_enrollment_sdk.ApiClient(configuration) as api_client:
         print("Exception when calling EnrollmentApi->enrollments_list: %s\n" % e)
 ```
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -94,6 +95,7 @@ Name | Type | Description  | Notes
 
  - **Content-Type**: Not defined
  - **Accept**: application/json
+
 
 ### HTTP response details
 | Status code | Description | Response headers |
