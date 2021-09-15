@@ -63,6 +63,8 @@ class EnrollmentApi(object):
                 x_user_last_name (str): [optional]
                 x_user_email (str): [optional]
                 x_user_global_id (str): [optional]
+                limit (int): Limit of paginated results. [optional]
+                offset (int): Offset of paginated results. [optional]
                 _return_http_data_only (bool): response data without head status
                     code and headers. Default is True.
                 _preload_content (bool): if False, the urllib3.HTTPResponse object
@@ -133,6 +135,8 @@ class EnrollmentApi(object):
                     'x_user_last_name',
                     'x_user_email',
                     'x_user_global_id',
+                    'limit',
+                    'offset',
                 ],
                 'required': [
                     'acronym',
@@ -165,6 +169,10 @@ class EnrollmentApi(object):
                         (str,),
                     'x_user_global_id':
                         (str,),
+                    'limit':
+                        (int,),
+                    'offset':
+                        (int,),
                 },
                 'attribute_map': {
                     'acronym': 'acronym',
@@ -174,6 +182,8 @@ class EnrollmentApi(object):
                     'x_user_last_name': 'X-User-LastName',
                     'x_user_email': 'X-User-Email',
                     'x_user_global_id': 'X-User-GlobalID',
+                    'limit': 'limit',
+                    'offset': 'offset',
                 },
                 'location_map': {
                     'acronym': 'path',
@@ -183,6 +193,8 @@ class EnrollmentApi(object):
                     'x_user_last_name': 'header',
                     'x_user_email': 'header',
                     'x_user_global_id': 'header',
+                    'limit': 'query',
+                    'offset': 'query',
                 },
                 'collection_format_map': {
                 }

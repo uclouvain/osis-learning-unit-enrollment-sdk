@@ -53,6 +53,8 @@ with osis_learning_unit_enrollment_sdk.ApiClient(configuration) as api_client:
     x_user_last_name = "X-User-LastName_example" # str |  (optional)
     x_user_email = "X-User-Email_example" # str |  (optional)
     x_user_global_id = "X-User-GlobalID_example" # str |  (optional)
+    limit = 25 # int | Limit of paginated results (optional)
+    offset = 25 # int | Offset of paginated results (optional)
 
     # example passing only required values which don't have defaults set
     try:
@@ -64,7 +66,7 @@ with osis_learning_unit_enrollment_sdk.ApiClient(configuration) as api_client:
     # example passing only required values which don't have defaults set
     # and optional values
     try:
-        api_response = api_instance.enrollments_list(acronym, year, accept_language=accept_language, x_user_first_name=x_user_first_name, x_user_last_name=x_user_last_name, x_user_email=x_user_email, x_user_global_id=x_user_global_id)
+        api_response = api_instance.enrollments_list(acronym, year, accept_language=accept_language, x_user_first_name=x_user_first_name, x_user_last_name=x_user_last_name, x_user_email=x_user_email, x_user_global_id=x_user_global_id, limit=limit, offset=offset)
         pprint(api_response)
     except osis_learning_unit_enrollment_sdk.ApiException as e:
         print("Exception when calling EnrollmentApi->enrollments_list: %s\n" % e)
@@ -82,6 +84,8 @@ Name | Type | Description  | Notes
  **x_user_last_name** | **str**|  | [optional]
  **x_user_email** | **str**|  | [optional]
  **x_user_global_id** | **str**|  | [optional]
+ **limit** | **int**| Limit of paginated results | [optional]
+ **offset** | **int**| Offset of paginated results | [optional]
 
 ### Return type
 
