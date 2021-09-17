@@ -90,6 +90,7 @@ class StudentSpecificProfile(ModelNormal):
             'type': (TypePepsEnum,),  # noqa: E501
             'type_text': (str,),  # noqa: E501
             'subtype': (dict,),  # noqa: E501
+            'subtype_text': (str,),  # noqa: E501
             'guide': (str,),  # noqa: E501
             'arrangement_additional_time': (bool,),  # noqa: E501
             'arrangement_appropriate_copy': (bool,),  # noqa: E501
@@ -107,6 +108,7 @@ class StudentSpecificProfile(ModelNormal):
         'type': 'type',  # noqa: E501
         'type_text': 'type_text',  # noqa: E501
         'subtype': 'subtype',  # noqa: E501
+        'subtype_text': 'subtype_text',  # noqa: E501
         'guide': 'guide',  # noqa: E501
         'arrangement_additional_time': 'arrangement_additional_time',  # noqa: E501
         'arrangement_appropriate_copy': 'arrangement_appropriate_copy',  # noqa: E501
@@ -159,6 +161,7 @@ class StudentSpecificProfile(ModelNormal):
             type (TypePepsEnum): [optional]  # noqa: E501
             type_text (str): [optional]  # noqa: E501
             subtype (dict): [optional]  # noqa: E501
+            subtype_text (str): [optional]  # noqa: E501
             guide (str): [optional]  # noqa: E501
             arrangement_additional_time (bool): [optional]  # noqa: E501
             arrangement_appropriate_copy (bool): [optional]  # noqa: E501
@@ -249,6 +252,7 @@ class StudentSpecificProfile(ModelNormal):
             type (TypePepsEnum): [optional]  # noqa: E501
             type_text (str): [optional]  # noqa: E501
             subtype (dict): [optional]  # noqa: E501
+            subtype_text (str): [optional]  # noqa: E501
             guide (str): [optional]  # noqa: E501
             arrangement_additional_time (bool): [optional]  # noqa: E501
             arrangement_appropriate_copy (bool): [optional]  # noqa: E501
