@@ -6,7 +6,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **type** | [**TypePepsEnum**](TypePepsEnum.md) |  | [optional] 
 **type_text** | **str** |  | [optional] 
-**subtype** | **dict** |  | [optional] 
+**subtype** | [**SubtypeEnum**](SubtypeEnum.md) |  | [optional] 
 **subtype_text** | **str** |  | [optional] 
 **guide** | **str** |  | [optional] 
 **arrangement_additional_time** | **bool** |  | [optional] 

@@ -104,14 +104,13 @@ Class | Method | HTTP request | Description
 ## Documentation For Models
 
  - [AcceptedLanguageEnum](docs/AcceptedLanguageEnum.md)
- - [DisabilitySubtypePepsEnum](docs/DisabilitySubtypePepsEnum.md)
  - [Enrollment](docs/Enrollment.md)
  - [EnrollmentList](docs/EnrollmentList.md)
  - [EnrollmentListAllOf](docs/EnrollmentListAllOf.md)
  - [Error](docs/Error.md)
  - [Paging](docs/Paging.md)
- - [SportSubtypePepsEnum](docs/SportSubtypePepsEnum.md)
  - [StudentSpecificProfile](docs/StudentSpecificProfile.md)
+ - [SubtypeEnum](docs/SubtypeEnum.md)
  - [TypePepsEnum](docs/TypePepsEnum.md)
 
 
