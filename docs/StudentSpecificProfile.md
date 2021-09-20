@@ -6,10 +6,8 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **type** | [**TypePepsEnum**](TypePepsEnum.md) |  | [optional] 
 **type_text** | **str** |  | [optional] 
-**subtype_sport** | [**SportSubtypePepsEnum**](SportSubtypePepsEnum.md) |  | [optional] 
-**subtype_sport_text** | **str, none_type** |  | [optional] 
-**subtype_disability** | [**DisabilitySubtypePepsEnum**](DisabilitySubtypePepsEnum.md) |  | [optional] 
-**subtype_disability_text** | **str, none_type** |  | [optional] 
+**subtype** | [**SubtypeEnum**](SubtypeEnum.md) |  | [optional] 
+**subtype_text** | **str** |  | [optional] 
 **guide** | **str** |  | [optional] 
 **arrangement_additional_time** | **bool** |  | [optional] 
 **arrangement_appropriate_copy** | **bool** |  | [optional] 

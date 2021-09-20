@@ -30,11 +30,9 @@ from osis_learning_unit_enrollment_sdk.exceptions import ApiAttributeError
 
 
 def lazy_import():
-    from osis_learning_unit_enrollment_sdk.model.disability_subtype_peps_enum import DisabilitySubtypePepsEnum
-    from osis_learning_unit_enrollment_sdk.model.sport_subtype_peps_enum import SportSubtypePepsEnum
+    from osis_learning_unit_enrollment_sdk.model.subtype_enum import SubtypeEnum
     from osis_learning_unit_enrollment_sdk.model.type_peps_enum import TypePepsEnum
-    globals()['DisabilitySubtypePepsEnum'] = DisabilitySubtypePepsEnum
-    globals()['SportSubtypePepsEnum'] = SportSubtypePepsEnum
+    globals()['SubtypeEnum'] = SubtypeEnum
     globals()['TypePepsEnum'] = TypePepsEnum
 
 
@@ -93,10 +91,8 @@ class StudentSpecificProfile(ModelNormal):
         return {
             'type': (TypePepsEnum,),  # noqa: E501
             'type_text': (str,),  # noqa: E501
-            'subtype_sport': (SportSubtypePepsEnum,),  # noqa: E501
-            'subtype_sport_text': (str, none_type,),  # noqa: E501
-            'subtype_disability': (DisabilitySubtypePepsEnum,),  # noqa: E501
-            'subtype_disability_text': (str, none_type,),  # noqa: E501
+            'subtype': (SubtypeEnum,),  # noqa: E501
+            'subtype_text': (str,),  # noqa: E501
             'guide': (str,),  # noqa: E501
             'arrangement_additional_time': (bool,),  # noqa: E501
             'arrangement_appropriate_copy': (bool,),  # noqa: E501
@@ -113,10 +109,8 @@ class StudentSpecificProfile(ModelNormal):
     attribute_map = {
         'type': 'type',  # noqa: E501
         'type_text': 'type_text',  # noqa: E501
-        'subtype_sport': 'subtype_sport',  # noqa: E501
-        'subtype_sport_text': 'subtype_sport_text',  # noqa: E501
-        'subtype_disability': 'subtype_disability',  # noqa: E501
-        'subtype_disability_text': 'subtype_disability_text',  # noqa: E501
+        'subtype': 'subtype',  # noqa: E501
+        'subtype_text': 'subtype_text',  # noqa: E501
         'guide': 'guide',  # noqa: E501
         'arrangement_additional_time': 'arrangement_additional_time',  # noqa: E501
         'arrangement_appropriate_copy': 'arrangement_appropriate_copy',  # noqa: E501
@@ -168,10 +162,8 @@ class StudentSpecificProfile(ModelNormal):
                                 _visited_composed_classes = (Animal,)
             type (TypePepsEnum): [optional]  # noqa: E501
             type_text (str): [optional]  # noqa: E501
-            subtype_sport (SportSubtypePepsEnum): [optional]  # noqa: E501
-            subtype_sport_text (str, none_type): [optional]  # noqa: E501
-            subtype_disability (DisabilitySubtypePepsEnum): [optional]  # noqa: E501
-            subtype_disability_text (str, none_type): [optional]  # noqa: E501
+            subtype (SubtypeEnum): [optional]  # noqa: E501
+            subtype_text (str): [optional]  # noqa: E501
             guide (str): [optional]  # noqa: E501
             arrangement_additional_time (bool): [optional]  # noqa: E501
             arrangement_appropriate_copy (bool): [optional]  # noqa: E501
@@ -261,10 +253,8 @@ class StudentSpecificProfile(ModelNormal):
                                 _visited_composed_classes = (Animal,)
             type (TypePepsEnum): [optional]  # noqa: E501
             type_text (str): [optional]  # noqa: E501
-            subtype_sport (SportSubtypePepsEnum): [optional]  # noqa: E501
-            subtype_sport_text (str, none_type): [optional]  # noqa: E501
-            subtype_disability (DisabilitySubtypePepsEnum): [optional]  # noqa: E501
-            subtype_disability_text (str, none_type): [optional]  # noqa: E501
+            subtype (SubtypeEnum): [optional]  # noqa: E501
+            subtype_text (str): [optional]  # noqa: E501
             guide (str): [optional]  # noqa: E501
             arrangement_additional_time (bool): [optional]  # noqa: E501
             arrangement_appropriate_copy (bool): [optional]  # noqa: E501

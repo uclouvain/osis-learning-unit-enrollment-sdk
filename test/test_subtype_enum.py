@@ -12,11 +12,11 @@ import sys
 import unittest
 
 import osis_learning_unit_enrollment_sdk
-from osis_learning_unit_enrollment_sdk.model.enrollment_list_all_of_results import EnrollmentListAllOfResults
+from osis_learning_unit_enrollment_sdk.model.subtype_enum import SubtypeEnum
 
 
-class TestEnrollmentListAllOfResults(unittest.TestCase):
-    """EnrollmentListAllOfResults unit test stubs"""
+class TestSubtypeEnum(unittest.TestCase):
+    """SubtypeEnum unit test stubs"""
 
     def setUp(self):
         pass
@@ -24,10 +24,10 @@ class TestEnrollmentListAllOfResults(unittest.TestCase):
     def tearDown(self):
         pass
 
-    def testEnrollmentListAllOfResults(self):
-        """Test EnrollmentListAllOfResults"""
+    def testSubtypeEnum(self):
+        """Test SubtypeEnum"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = EnrollmentListAllOfResults()  # noqa: E501
+        # model = SubtypeEnum()  # noqa: E501
         pass
 
 
