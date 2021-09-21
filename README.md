@@ -51,8 +51,8 @@ import osis_learning_unit_enrollment_sdk
 from pprint import pprint
 from osis_learning_unit_enrollment_sdk.api import enrollment_api
 from osis_learning_unit_enrollment_sdk.model.accepted_language_enum import AcceptedLanguageEnum
-from osis_learning_unit_enrollment_sdk.model.enrollment_list import EnrollmentList
 from osis_learning_unit_enrollment_sdk.model.error import Error
+from osis_learning_unit_enrollment_sdk.model.paginated_enrollment_list import PaginatedEnrollmentList
 # Defining the host is optional and defaults to https://dev.osis.uclouvain.be/api/v1/learning_unit_enrollment
 # See configuration.py for a list of all supported configuration parameters.
 configuration = osis_learning_unit_enrollment_sdk.Configuration(
@@ -105,9 +105,9 @@ Class | Method | HTTP request | Description
 
  - [AcceptedLanguageEnum](docs/AcceptedLanguageEnum.md)
  - [Enrollment](docs/Enrollment.md)
- - [EnrollmentList](docs/EnrollmentList.md)
- - [EnrollmentListAllOf](docs/EnrollmentListAllOf.md)
  - [Error](docs/Error.md)
+ - [PaginatedEnrollmentList](docs/PaginatedEnrollmentList.md)
+ - [PaginatedEnrollmentListAllOf](docs/PaginatedEnrollmentListAllOf.md)
  - [Paging](docs/Paging.md)
  - [StudentSpecificProfile](docs/StudentSpecificProfile.md)
  - [SubtypeEnum](docs/SubtypeEnum.md)

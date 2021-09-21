@@ -22,8 +22,8 @@ from osis_learning_unit_enrollment_sdk.model_utils import (  # noqa: F401
     validate_and_convert_types
 )
 from osis_learning_unit_enrollment_sdk.model.accepted_language_enum import AcceptedLanguageEnum
-from osis_learning_unit_enrollment_sdk.model.enrollment_list import EnrollmentList
 from osis_learning_unit_enrollment_sdk.model.error import Error
+from osis_learning_unit_enrollment_sdk.model.paginated_enrollment_list import PaginatedEnrollmentList
 
 
 class EnrollmentApi(object):
@@ -86,7 +86,7 @@ class EnrollmentApi(object):
                 async_req (bool): execute request asynchronously
 
             Returns:
-                EnrollmentList
+                PaginatedEnrollmentList
                     If the method is called asynchronously, returns the request
                     thread.
             """
@@ -117,7 +117,7 @@ class EnrollmentApi(object):
 
         self.enrollments_list = _Endpoint(
             settings={
-                'response_type': (EnrollmentList,),
+                'response_type': (PaginatedEnrollmentList,),
                 'auth': [
                     'Token'
                 ],

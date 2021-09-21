@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **enrollments_list**
-> EnrollmentList enrollments_list(acronym, year)
+> PaginatedEnrollmentList enrollments_list(acronym, year)
 
 
 
@@ -23,7 +23,7 @@ import osis_learning_unit_enrollment_sdk
 from osis_learning_unit_enrollment_sdk.api import enrollment_api
 from osis_learning_unit_enrollment_sdk.model.accepted_language_enum import AcceptedLanguageEnum
 from osis_learning_unit_enrollment_sdk.model.error import Error
-from osis_learning_unit_enrollment_sdk.model.enrollment_list import EnrollmentList
+from osis_learning_unit_enrollment_sdk.model.paginated_enrollment_list import PaginatedEnrollmentList
 from pprint import pprint
 # Defining the host is optional and defaults to https://dev.osis.uclouvain.be/api/v1/learning_unit_enrollment
 # See configuration.py for a list of all supported configuration parameters.
@@ -89,7 +89,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**EnrollmentList**](EnrollmentList.md)
+[**PaginatedEnrollmentList**](PaginatedEnrollmentList.md)
 
 ### Authorization
 

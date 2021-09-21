@@ -96,6 +96,7 @@ class Enrollment(ModelNormal):
             'specific_profile': (StudentSpecificProfile,),  # noqa: E501
             'program': (str,),  # noqa: E501
             'learning_unit_acronym': (str,),  # noqa: E501
+            'learning_unit_year': (int,),  # noqa: E501
         }
 
     @cached_property
@@ -113,6 +114,7 @@ class Enrollment(ModelNormal):
         'specific_profile': 'specific_profile',  # noqa: E501
         'program': 'program',  # noqa: E501
         'learning_unit_acronym': 'learning_unit_acronym',  # noqa: E501
+        'learning_unit_year': 'learning_unit_year',  # noqa: E501
     }
 
     read_only_vars = {
@@ -165,6 +167,7 @@ class Enrollment(ModelNormal):
             specific_profile (StudentSpecificProfile): [optional]  # noqa: E501
             program (str): [optional]  # noqa: E501
             learning_unit_acronym (str): [optional]  # noqa: E501
+            learning_unit_year (int): [optional]  # noqa: E501
         """
 
         _check_type = kwargs.pop('_check_type', True)
@@ -255,6 +258,7 @@ class Enrollment(ModelNormal):
             specific_profile (StudentSpecificProfile): [optional]  # noqa: E501
             program (str): [optional]  # noqa: E501
             learning_unit_acronym (str): [optional]  # noqa: E501
+            learning_unit_year (int): [optional]  # noqa: E501
         """
 
         _check_type = kwargs.pop('_check_type', True)
