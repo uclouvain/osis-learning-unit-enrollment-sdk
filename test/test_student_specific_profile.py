@@ -12,11 +12,9 @@ import sys
 import unittest
 
 import osis_learning_unit_enrollment_sdk
-from osis_learning_unit_enrollment_sdk.model.disability_subtype_peps_enum import DisabilitySubtypePepsEnum
-from osis_learning_unit_enrollment_sdk.model.sport_subtype_peps_enum import SportSubtypePepsEnum
+from osis_learning_unit_enrollment_sdk.model.subtype_enum import SubtypeEnum
 from osis_learning_unit_enrollment_sdk.model.type_peps_enum import TypePepsEnum
-globals()['DisabilitySubtypePepsEnum'] = DisabilitySubtypePepsEnum
-globals()['SportSubtypePepsEnum'] = SportSubtypePepsEnum
+globals()['SubtypeEnum'] = SubtypeEnum
 globals()['TypePepsEnum'] = TypePepsEnum
 from osis_learning_unit_enrollment_sdk.model.student_specific_profile import StudentSpecificProfile
 

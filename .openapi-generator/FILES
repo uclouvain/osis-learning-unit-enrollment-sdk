@@ -38,6 +38,4 @@ setup.cfg
 setup.py
 test-requirements.txt
 test/__init__.py
-test/test_paginated_enrollment_list.py
-test/test_paginated_enrollment_list_all_of.py
 tox.ini

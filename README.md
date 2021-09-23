@@ -101,6 +101,7 @@ All URIs are relative to *https://dev.osis.uclouvain.be/api/v1/learning_unit_enr
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
 *EnrollmentApi* | [**enrollments_list**](docs/EnrollmentApi.md#enrollments_list) | **GET** /enrollments/{acronym}/{year}/ | 
+*EnrollmentApi* | [**my_enrollments_list**](docs/EnrollmentApi.md#my_enrollments_list) | **GET** /enrollments/{program_code}/{year}/ | 
 
 
 ## Documentation For Models
