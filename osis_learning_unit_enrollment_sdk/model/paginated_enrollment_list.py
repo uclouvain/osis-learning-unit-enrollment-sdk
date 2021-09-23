@@ -95,6 +95,7 @@ class PaginatedEnrollmentList(ModelComposed):
             'next': (str, none_type,),  # noqa: E501
             'previous': (str, none_type,),  # noqa: E501
             'results': ([Enrollment],),  # noqa: E501
+            'enrolled_students_count': (int,),  # noqa: E501
         }
 
     @cached_property
@@ -107,6 +108,7 @@ class PaginatedEnrollmentList(ModelComposed):
         'next': 'next',  # noqa: E501
         'previous': 'previous',  # noqa: E501
         'results': 'results',  # noqa: E501
+        'enrolled_students_count': 'enrolled_students_count',  # noqa: E501
     }
 
     read_only_vars = {
@@ -152,6 +154,7 @@ class PaginatedEnrollmentList(ModelComposed):
             next (str, none_type): [optional]  # noqa: E501
             previous (str, none_type): [optional]  # noqa: E501
             results ([Enrollment]): [optional]  # noqa: E501
+            enrolled_students_count (int): [optional]  # noqa: E501
         """
 
         _check_type = kwargs.pop('_check_type', True)
@@ -255,6 +258,7 @@ class PaginatedEnrollmentList(ModelComposed):
             next (str, none_type): [optional]  # noqa: E501
             previous (str, none_type): [optional]  # noqa: E501
             results ([Enrollment]): [optional]  # noqa: E501
+            enrolled_students_count (int): [optional]  # noqa: E501
         """
 
         _check_type = kwargs.pop('_check_type', True)

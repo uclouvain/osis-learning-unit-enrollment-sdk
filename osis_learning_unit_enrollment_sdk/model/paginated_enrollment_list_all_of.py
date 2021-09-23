@@ -88,6 +88,7 @@ class PaginatedEnrollmentListAllOf(ModelNormal):
         lazy_import()
         return {
             'results': ([Enrollment],),  # noqa: E501
+            'enrolled_students_count': (int,),  # noqa: E501
         }
 
     @cached_property
@@ -97,6 +98,7 @@ class PaginatedEnrollmentListAllOf(ModelNormal):
 
     attribute_map = {
         'results': 'results',  # noqa: E501
+        'enrolled_students_count': 'enrolled_students_count',  # noqa: E501
     }
 
     read_only_vars = {
@@ -141,6 +143,7 @@ class PaginatedEnrollmentListAllOf(ModelNormal):
                                 through its discriminator because we passed in
                                 _visited_composed_classes = (Animal,)
             results ([Enrollment]): [optional]  # noqa: E501
+            enrolled_students_count (int): [optional]  # noqa: E501
         """
 
         _check_type = kwargs.pop('_check_type', True)
@@ -223,6 +226,7 @@ class PaginatedEnrollmentListAllOf(ModelNormal):
                                 through its discriminator because we passed in
                                 _visited_composed_classes = (Animal,)
             results ([Enrollment]): [optional]  # noqa: E501
+            enrolled_students_count (int): [optional]  # noqa: E501
         """
 
         _check_type = kwargs.pop('_check_type', True)
