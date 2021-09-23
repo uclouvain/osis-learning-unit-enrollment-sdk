@@ -229,7 +229,7 @@ class EnrollmentApi(object):
         ):
             """my_enrollments_list  # noqa: E501
 
-            Return all enrollments of the connected user based on offer enrollment  # noqa: E501
+            Return all enrollments of the connected user based on an offer enrollment  # noqa: E501
             This method makes a synchronous HTTP request by default. To make an
             asynchronous HTTP request, please pass async_req=True
 
@@ -304,7 +304,7 @@ class EnrollmentApi(object):
                 'auth': [
                     'Token'
                 ],
-                'endpoint_path': '/enrollments/{program_code}/{year}/',
+                'endpoint_path': '/my_enrollments/{program_code}/{year}/',
                 'operation_id': 'my_enrollments_list',
                 'http_method': 'GET',
                 'servers': None,

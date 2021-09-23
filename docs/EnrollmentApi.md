@@ -5,7 +5,7 @@ All URIs are relative to *https://dev.osis.uclouvain.be/api/v1/learning_unit_enr
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**enrollments_list**](EnrollmentApi.md#enrollments_list) | **GET** /enrollments/{acronym}/{year}/ | 
-[**my_enrollments_list**](EnrollmentApi.md#my_enrollments_list) | **GET** /enrollments/{program_code}/{year}/ | 
+[**my_enrollments_list**](EnrollmentApi.md#my_enrollments_list) | **GET** /my_enrollments/{program_code}/{year}/ | 
 
 
 # **enrollments_list**
@@ -121,7 +121,7 @@ Name | Type | Description  | Notes
 
 
 
-Return all enrollments of the connected user based on offer enrollment
+Return all enrollments of the connected user based on an offer enrollment
 
 ### Example
 
