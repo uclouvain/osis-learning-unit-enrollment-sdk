@@ -22,8 +22,8 @@ from osis_learning_unit_enrollment_sdk.model_utils import (  # noqa: F401
     validate_and_convert_types
 )
 from osis_learning_unit_enrollment_sdk.model.accepted_language_enum import AcceptedLanguageEnum
-from osis_learning_unit_enrollment_sdk.model.enrollment_list import EnrollmentList
 from osis_learning_unit_enrollment_sdk.model.error import Error
+from osis_learning_unit_enrollment_sdk.model.paginated_enrollment_list import PaginatedEnrollmentList
 
 
 class EnrollmentApi(object):
@@ -58,6 +58,8 @@ class EnrollmentApi(object):
                 year (int): The learning unit academic year
 
             Keyword Args:
+                search (str): [optional]
+                ordering (str): [optional]
                 accept_language (AcceptedLanguageEnum): The header advertises which languages the client is able to understand, and which locale variant is preferred. (By languages, we mean natural languages, such as English, and not programming languages.) . [optional]
                 x_user_first_name (str): [optional]
                 x_user_last_name (str): [optional]
@@ -86,7 +88,7 @@ class EnrollmentApi(object):
                 async_req (bool): execute request asynchronously
 
             Returns:
-                EnrollmentList
+                PaginatedEnrollmentList
                     If the method is called asynchronously, returns the request
                     thread.
             """
@@ -117,7 +119,7 @@ class EnrollmentApi(object):
 
         self.enrollments_list = _Endpoint(
             settings={
-                'response_type': (EnrollmentList,),
+                'response_type': (PaginatedEnrollmentList,),
                 'auth': [
                     'Token'
                 ],
@@ -130,6 +132,8 @@ class EnrollmentApi(object):
                 'all': [
                     'acronym',
                     'year',
+                    'search',
+                    'ordering',
                     'accept_language',
                     'x_user_first_name',
                     'x_user_last_name',
@@ -159,6 +163,10 @@ class EnrollmentApi(object):
                         (str,),
                     'year':
                         (int,),
+                    'search':
+                        (str,),
+                    'ordering':
+                        (str,),
                     'accept_language':
                         (AcceptedLanguageEnum,),
                     'x_user_first_name':
@@ -177,6 +185,8 @@ class EnrollmentApi(object):
                 'attribute_map': {
                     'acronym': 'acronym',
                     'year': 'year',
+                    'search': 'search',
+                    'ordering': 'ordering',
                     'accept_language': 'Accept-Language',
                     'x_user_first_name': 'X-User-FirstName',
                     'x_user_last_name': 'X-User-LastName',
@@ -188,6 +198,8 @@ class EnrollmentApi(object):
                 'location_map': {
                     'acronym': 'path',
                     'year': 'path',
+                    'search': 'query',
+                    'ordering': 'query',
                     'accept_language': 'header',
                     'x_user_first_name': 'header',
                     'x_user_last_name': 'header',

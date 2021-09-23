@@ -8,7 +8,7 @@ Name | Type | Description | Notes
 **type_text** | **str** |  | [optional] 
 **subtype** | [**SubtypeEnum**](SubtypeEnum.md) |  | [optional] 
 **subtype_text** | **str** |  | [optional] 
-**guide** | **str** |  | [optional] 
+**guide** | **str, none_type** |  | [optional] 
 **arrangement_additional_time** | **bool** |  | [optional] 
 **arrangement_appropriate_copy** | **bool** |  | [optional] 
 **arrangement_other** | **bool** |  | [optional] 

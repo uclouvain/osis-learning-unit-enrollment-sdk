@@ -93,7 +93,7 @@ class StudentSpecificProfile(ModelNormal):
             'type_text': (str,),  # noqa: E501
             'subtype': (SubtypeEnum,),  # noqa: E501
             'subtype_text': (str,),  # noqa: E501
-            'guide': (str,),  # noqa: E501
+            'guide': (str, none_type,),  # noqa: E501
             'arrangement_additional_time': (bool,),  # noqa: E501
             'arrangement_appropriate_copy': (bool,),  # noqa: E501
             'arrangement_other': (bool,),  # noqa: E501
@@ -164,7 +164,7 @@ class StudentSpecificProfile(ModelNormal):
             type_text (str): [optional]  # noqa: E501
             subtype (SubtypeEnum): [optional]  # noqa: E501
             subtype_text (str): [optional]  # noqa: E501
-            guide (str): [optional]  # noqa: E501
+            guide (str, none_type): [optional]  # noqa: E501
             arrangement_additional_time (bool): [optional]  # noqa: E501
             arrangement_appropriate_copy (bool): [optional]  # noqa: E501
             arrangement_other (bool): [optional]  # noqa: E501
@@ -255,7 +255,7 @@ class StudentSpecificProfile(ModelNormal):
             type_text (str): [optional]  # noqa: E501
             subtype (SubtypeEnum): [optional]  # noqa: E501
             subtype_text (str): [optional]  # noqa: E501
-            guide (str): [optional]  # noqa: E501
+            guide (str, none_type): [optional]  # noqa: E501
             arrangement_additional_time (bool): [optional]  # noqa: E501
             arrangement_appropriate_copy (bool): [optional]  # noqa: E501
             arrangement_other (bool): [optional]  # noqa: E501

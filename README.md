@@ -51,8 +51,8 @@ import osis_learning_unit_enrollment_sdk
 from pprint import pprint
 from osis_learning_unit_enrollment_sdk.api import enrollment_api
 from osis_learning_unit_enrollment_sdk.model.accepted_language_enum import AcceptedLanguageEnum
-from osis_learning_unit_enrollment_sdk.model.enrollment_list import EnrollmentList
 from osis_learning_unit_enrollment_sdk.model.error import Error
+from osis_learning_unit_enrollment_sdk.model.paginated_enrollment_list import PaginatedEnrollmentList
 # Defining the host is optional and defaults to https://dev.osis.uclouvain.be/api/v1/learning_unit_enrollment
 # See configuration.py for a list of all supported configuration parameters.
 configuration = osis_learning_unit_enrollment_sdk.Configuration(
@@ -77,6 +77,8 @@ with osis_learning_unit_enrollment_sdk.ApiClient(configuration) as api_client:
     api_instance = enrollment_api.EnrollmentApi(api_client)
     acronym = "LABCD1234" # str | The learning unit acronym
 year = 2021 # int | The learning unit academic year
+search = "search_example" # str |  (optional)
+ordering = "ordering_example" # str |  (optional)
 accept_language = AcceptedLanguageEnum("en") # AcceptedLanguageEnum | The header advertises which languages the client is able to understand, and which locale variant is preferred. (By languages, we mean natural languages, such as English, and not programming languages.)  (optional)
 x_user_first_name = "X-User-FirstName_example" # str |  (optional)
 x_user_last_name = "X-User-LastName_example" # str |  (optional)
@@ -86,7 +88,7 @@ limit = 25 # int | Limit of paginated results (optional)
 offset = 25 # int | Offset of paginated results (optional)
 
     try:
-        api_response = api_instance.enrollments_list(acronym, year, accept_language=accept_language, x_user_first_name=x_user_first_name, x_user_last_name=x_user_last_name, x_user_email=x_user_email, x_user_global_id=x_user_global_id, limit=limit, offset=offset)
+        api_response = api_instance.enrollments_list(acronym, year, search=search, ordering=ordering, accept_language=accept_language, x_user_first_name=x_user_first_name, x_user_last_name=x_user_last_name, x_user_email=x_user_email, x_user_global_id=x_user_global_id, limit=limit, offset=offset)
         pprint(api_response)
     except osis_learning_unit_enrollment_sdk.ApiException as e:
         print("Exception when calling EnrollmentApi->enrollments_list: %s\n" % e)
@@ -105,9 +107,9 @@ Class | Method | HTTP request | Description
 
  - [AcceptedLanguageEnum](docs/AcceptedLanguageEnum.md)
  - [Enrollment](docs/Enrollment.md)
- - [EnrollmentList](docs/EnrollmentList.md)
- - [EnrollmentListAllOf](docs/EnrollmentListAllOf.md)
  - [Error](docs/Error.md)
+ - [PaginatedEnrollmentList](docs/PaginatedEnrollmentList.md)
+ - [PaginatedEnrollmentListAllOf](docs/PaginatedEnrollmentListAllOf.md)
  - [Paging](docs/Paging.md)
  - [StudentSpecificProfile](docs/StudentSpecificProfile.md)
  - [SubtypeEnum](docs/SubtypeEnum.md)
